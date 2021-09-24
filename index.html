@@ -29,7 +29,7 @@
       rel="stylesheet"
     />
     <link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
-    <title>Vtrious Technologies</title>
+    <title>Introis Technologies</title>
   </head>
   <body>
     <div class="shade"></div>
@@ -46,7 +46,28 @@
         <li><a href="#join-us">Join Us</a></li>
       </ul>
       <a href="#contact-us" class="contact-us">Contact Us</a>
+      <div class="nav-toggle">
+        <img class="hamburger" src="./images/hamburger.svg" alt="" />
+      </div>
     </header>
+
+    <nav class="nav">
+      <ul class="nav_list">
+        <li class="nav_item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav_item">
+          <a class="nav-link" href="#about-us">About US</a>
+        </li>
+        <li class="nav_item">
+          <a class="nav-link" href="#our-services">Our Services</a>
+        </li>
+        <li class="nav_item">
+          <a class="nav-link" href="#works">Latest Work</a>
+        </li>
+        <li class="nav_item">
+          <a class="nav-link" href="#join-us">Join Us</a>
+        </li>
+      </ul>
+    </nav>
     <button onclick="next()" class="next">next</button
     ><button onclick="prev()" class="prev">prev</button>
     <div class="container" id="home">
@@ -133,7 +154,7 @@
         <section class="page4">
           <article>
             <h2 class="page4-h2">OUR RECENT <span>WORKS</span></h2>
-            <a href="#work1" class="get-started">View our works</a>
+            <a href="#work1" class="view-our-works">View our works</a>
           </article>
           <img src="./images/ongoing.png" alt="" />
         </section>
@@ -198,8 +219,8 @@
       </div> -->
       <div class="page" id="contact-us">
         <section class="page8">
-          <h2>We’d Love to Hear From You</h2>
-          <!-- <div class="icons">
+          <h2>We’d Love to Hear From <span>You</span>!</h2>
+          <div class="icons">
             <div class="icon">
               <img
                 class="contact-icons"
@@ -224,11 +245,11 @@
               />
               <p>lorem ipsum</p>
             </div>
-          </div> -->
+          </div>
           <div class="bottom-sheet">
             <form action="">
               <div class="flex-sheet">
-                <div>
+                <div class="details">
                   <label for="name">Your Name</label>
                   <input type="text" name="name" id="name" />
                   <label for="mail">Mail</label>

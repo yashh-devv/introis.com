@@ -1,10 +1,25 @@
+// MENU
+
+const navToggle=document.querySelector( '.nav-toggle');
+const navlinks=document.querySelectorAll('.nav-link');
+navToggle.addEventListener('click',()=>{
+    document.body.classList.toggle('nav-open');
+});
+
+navlinks.forEach(link => {
+    link.addEventListener('click' , ()=>{
+        document.body.classList.remove('nav-open');
+    })
+})
+
+//SCROLL
+
 const vh = document.documentElement.clientHeight 
 var height=0;
 var body = document.body,
     html = document.documentElement;
 var max = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-
 
 $(document).on('mousewheel DOMMouseScroll', function (event) {
     if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
