@@ -91,6 +91,7 @@ header a {
   margin-right: 2em;
   display: block;
   position: relative;
+  transition: transform 300ms;
 }
 
 /* MENU */
