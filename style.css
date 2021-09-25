@@ -8,7 +8,7 @@
   --ff-primary: "Open Sans", sans-serif;
   --ff-secondary: "Poppins", sans-serif;
   --ff-sofia: "Sofia Pro", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   --fw-reg: 300;
   --fw-bold: 900;
   font-family: var(--ff-sofia);
@@ -26,17 +26,19 @@
   transition: font-size 250ms;
 }
 
-/* TESTING  */
-
-.next {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
+@media (min-width: 1200px) {
+  :root {
+    font-size: 20px;
+  }
 }
-.prev {
-  position: fixed;
-  left: 10px;
-  bottom: 10px;
+
+@media (min-width: 1000px) {
+  :root {
+    font-size: 16px;
+  }
+  page1 h1 {
+    font-size: 1em;
+  }
 }
 
 html {
@@ -44,6 +46,10 @@ html {
   /* overflow: hidden; */
 }
 
+.on {
+  color: var(--clr-accent);
+  font-weight: bold;
+}
 body {
   margin: 0;
   color: black;
@@ -148,7 +154,7 @@ header a {
 }
 
 .container {
-  margin-top: 8em;
+  margin-top: 4em;
   padding: 0 1em;
 }
 .page {
@@ -213,6 +219,9 @@ header a {
 .page6-p {
   font-size: var(--fs-p);
   font-weight: 300;
+}
+.page3 {
+  padding-left: 2em;
 }
 
 .services {
@@ -324,16 +333,16 @@ input {
 /* FOOTER */
 
 footer {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  bottom: 2em;
+  display: none;
 }
-footer a {
-  padding: 1em;
-}
-footer a img {
-  width: 1.5em;
+
+@media (min-width: 760px) {
+  .container {
+    padding-top: 4em;
+  }
+  .page1 img {
+    max-width: 60%;
+  }
 }
 
 @media (min-width: 800px) {
@@ -342,10 +351,6 @@ footer a img {
   }
   :root {
     font-size: 18px;
-    --fs-h1: 4.5rem;
-    --fs-h2: 2.75rem;
-    --fs-h3: 1.5rem;
-    --fs-body: 1.125rem;
   }
   header {
     font-family: var(--ff-secondary);
@@ -396,7 +401,7 @@ footer a img {
     text-decoration: none;
     color: var(--clr-light);
     padding: 0.25em 0.75em;
-    margin: 2em 2em;
+    margin: 2em 3em;
     background-color: var(--clr-secondary);
     border-radius: 10px;
   }
@@ -411,12 +416,11 @@ footer a img {
   }
   .page1,
   .page2,
-  .page3,
   .page4,
   .page5,
   .page6,
   .page7 {
-    padding-left: 5.5em;
+    padding-left: 3.5em;
   }
   .page1 {
     display: flex;
@@ -425,10 +429,10 @@ footer a img {
   }
   .page1 h1 {
     margin: 0;
-  }
-  .page1-h1 {
+    font-size: 4em;
     font-weight: 900;
   }
+
   .page1 p {
     max-width: 60%;
   }
@@ -438,7 +442,7 @@ footer a img {
   .page2 {
     display: flex;
     align-items: center;
-    padding-right: 5.5em;
+    padding-right: 3.5em;
   }
   .page2-h2,
   .page3-h2,
@@ -458,21 +462,22 @@ footer a img {
   }
   .page2-p {
     flex: 50;
-    font-size: var(--fs-p);
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 300;
   }
   .page3 {
     height: 100vh;
     display: flex;
     align-items: center;
+    padding-left: 2em;
   }
   .page3-h2 {
     font-size: 2em;
     min-width: 7em;
   }
   .service {
-    max-width: 25vh;
-    font-size: 1em;
+    max-width: 28vh;
+    font-size: 1.2em;
   }
   .service:hover,
   .service-h1:hover {
@@ -488,6 +493,7 @@ footer a img {
   .page4 img {
     flex: 50;
     width: 40vw;
+    margin: 0;
   }
   .page5-h2,
   .page6-h2,
@@ -554,7 +560,8 @@ footer a img {
   }
   .macbook {
     flex: 2;
-    height: 60vh;
+    /* height: 50vh; */
+    width: 40vw;
   }
 
   .bottom-sheet {
