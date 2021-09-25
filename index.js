@@ -56,5 +56,49 @@ function sleep(milliseconds) {
   } while (currentDate - date < milliseconds);
 }
 
+$("#service1").hover(function(){
+  $("#service-h1").toggleClass("gradient-text1");
+  }
+);
+
+$("#service2").hover(function(){
+  $("#service-h2").toggleClass("gradient-text2");
+  }
+);
+$("#service3").hover(function(){
+  $("#service-h3").toggleClass("gradient-text3");
+  }
+);
+$("#service4").hover(function(){
+  $("#service-h4").toggleClass("gradient-text4");
+  }
+);
+$("#service5").hover(function(){
+  $("#service-h5").toggleClass("gradient-text5");
+  }
+);
+$("#service6").hover(function(){
+  $("#service-h6").toggleClass("gradient-text6");
+  }
+);
 
 
+
+
+// Comeback
+
+
+var message = "Come Back";
+  var original;
+
+  $(window).focus(function() {
+    if (original) {
+      document.title = original;
+    }
+  }).blur(function() {
+    var title = $('title').text();
+    if (title != message) {
+      original = title;
+    }
+    document.title = message;
+  });

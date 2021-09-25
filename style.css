@@ -51,6 +51,7 @@ html {
   font-weight: bold;
 }
 body {
+  height: 100vh;
   margin: 0;
   color: black;
   font-size: var(--fw-reg);
@@ -97,8 +98,8 @@ header a {
 .nav {
   font-family: var(--ff-secondary);
   position: fixed;
-  background: var(--clr-accent);
-  color: var(--clr-light);
+  background: white;
+  color: #272727;
   top: 0;
   bottom: 0;
   left: 0;
@@ -479,10 +480,10 @@ footer {
     max-width: 28vh;
     font-size: 1.2em;
   }
-  .service:hover,
-  .service-h1:hover {
+  .service:hover {
     transform: scale(1.2);
   }
+
   .page4 {
     display: flex;
     justify-content: center;
@@ -519,7 +520,7 @@ footer {
   .page5 p,
   .page6 p {
     font-size: 0.8em;
-    font-weight: 300;
+    font-weight: 500;
     width: 80%;
   }
   .page7 {
@@ -615,4 +616,44 @@ footer {
   footer a img {
     width: 1.5em;
   }
+}
+
+[class^="gradient-text"] {
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.gradient-text1 {
+  background-color: #833ab4;
+  background-image: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+}
+.gradient-text2 {
+  background-color: #006dc6;
+  background-image: linear-gradient(45deg, #006dc6, #86c64d);
+}
+
+.gradient-text3 {
+  background-color: #d16ba5;
+  background-image: linear-gradient(45deg, #d16ba5, #86a8e7, #5ffbf1);
+}
+
+.gradient-text4 {
+  background-color: #006dc6;
+  background-image: linear-gradient(45deg, #006dc6, #86c64d);
+}
+
+.gradient-text5 {
+  background-color: #006dc6;
+  background-image: linear-gradient(45deg, #006dc6, #86c64d);
+}
+
+.gradient-text6 {
+  background-color: #006dc6;
+  background-image: linear-gradient(45deg, #006dc6, #86c64d);
+}
+
+textarea {
+  columns: 50;
 }
