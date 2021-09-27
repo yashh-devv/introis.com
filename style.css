@@ -228,13 +228,14 @@ header a {
 }
 .service {
   /* z-index: 1000; */
-  background-color: whitesmoke;
   max-width: 80%;
   margin: 1.2em;
   padding: 1em 3em;
-  border-radius: 10px;
-  box-shadow: 10px 10px 30px #969696, -10px -10px 30px #ffffff;
-  transition: transform 100ms;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+
+  transition: transform 350ms;
   font-size: 2em;
 }
 .service p {
