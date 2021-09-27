@@ -33,11 +33,10 @@
     <title>Introis Technologies</title>
   </head>
   <body>
-    <div class="shade"></div>
     <div class="shade2"></div>
     <header>
       <div class="logo">
-        <img class="logo-img" src="./images/logo.png" />
+        <img class="logo-img" src="./images/logo.svg" />
       </div>
       <ul>
         <li class="tab"><a href="#home">Home</a></li>
@@ -247,7 +246,10 @@
             </div>
           </div>
           <div class="bottom-sheet">
-            <form action="">
+            <form
+              action="https://formsubmit.co/yashwanthtron@gmail.com"
+              method="POST"
+            >
               <div class="flex-sheet">
                 <div class="details">
                   <label for="name">Your Name</label>
@@ -256,6 +258,12 @@
                   <input type="email" name="mail" id="mail" />
                   <label for="phone">Phone</label>
                   <input type="tel" name="phone" id="phone" />
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="New submission!"
+                  />
+                  <input type="hidden" name="_captcha" value="false" />
                 </div>
                 <div>
                   <label for="message">Message</label>
