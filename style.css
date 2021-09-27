@@ -8,7 +8,7 @@
   --ff-primary: "Open Sans", sans-serif;
   --ff-secondary: "Poppins", sans-serif;
   --ff-sofia: "Sofia Pro", sans-serif;
-  font-size: 14px;
+  font-size: 5px;
   --fw-reg: 300;
   --fw-bold: 900;
   font-family: var(--ff-sofia);
@@ -26,18 +26,15 @@
   transition: font-size 250ms;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1000px) {
   :root {
-    font-size: 20px;
+    font-size: 12px;
   }
-}
-
-@media (min-width: 1000px) {
-  :root {
-    font-size: 16px;
-  }
-  page1 h1 {
+  .page1 h1 {
     font-size: 1em;
+  }
+  .page3 {
+    flex-direction: column;
   }
 }
 
@@ -51,7 +48,6 @@ html {
   font-weight: bold;
 }
 body {
-  height: 100vh;
   margin: 0;
   color: black;
   font-size: var(--fw-reg);
@@ -160,10 +156,10 @@ header a {
   padding: 0 1em;
 }
 .page {
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2em 0;
 }
 
 /* PAGE1 */
@@ -222,9 +218,6 @@ header a {
   font-size: var(--fs-p);
   font-weight: 300;
 }
-.page3 {
-  padding-left: 2em;
-}
 
 .services {
   font-size: 0.6em;
@@ -266,7 +259,9 @@ img {
   width: 100%;
 }
 
-/* PAGE7 */
+.page8 {
+  padding-top: 1em;
+}
 
 .page8 h2 {
   font-size: var(--fs-h2);
@@ -341,6 +336,7 @@ footer {
 @media (min-width: 760px) {
   .container {
     padding-top: 4em;
+    height: 100vh;
   }
   .page1 img {
     max-width: 60%;
@@ -350,6 +346,7 @@ footer {
 @media (min-width: 800px) {
   body {
     text-align: unset;
+    height: 100vh;
   }
   :root {
     font-size: 18px;
@@ -411,7 +408,6 @@ footer {
     /* padding: 5.5rem 6rem 2rem; */
     margin-top: 1em;
     padding: 0 1em;
-    height: 100vh;
     z-index: 100;
     /* scroll-snap-type: y mandatory;
   overflow-y: scroll; */
@@ -468,7 +464,6 @@ footer {
     font-weight: 300;
   }
   .page3 {
-    height: 100vh;
     display: flex;
     align-items: center;
     padding-left: 2em;
@@ -508,7 +503,6 @@ footer {
   }
   .page5,
   .page6 {
-    height: 100vh;
     display: flex;
     align-items: center;
   }
@@ -524,9 +518,7 @@ footer {
     font-weight: 500;
     width: 80%;
   }
-  .page7 {
-    height: 100vh;
-  }
+
   .flex-image {
     display: flex;
   }
