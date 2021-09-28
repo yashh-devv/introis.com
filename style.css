@@ -34,6 +34,7 @@ textarea {
   resize: none;
   border: none;
   padding: 1em;
+  width: 25em;
 }
 .message {
   padding: 1em;
@@ -73,7 +74,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: var(--clr-light);
   position: fixed;
   top: 0;
   left: 0;
@@ -306,7 +307,7 @@ img {
   /* top: 10vh; */
   background-color: whitesmoke;
   border-radius: 10px 10px 0px 0px;
-  box-shadow: 10px 10px 30px #969696, -10px -10px 30px #ffffff;
+  box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px #9ea8bd;
   padding-bottom: 1em;
 }
 label,
@@ -320,7 +321,7 @@ input {
   border-radius: 11px;
   border: none;
   height: 2em;
-  width: 70%;
+  width: 100%;
   padding: 0.5em;
   margin-bottom: 1em;
   outline-style: none;
@@ -372,7 +373,6 @@ footer {
     font-size: 18px;
   }
   header {
-    background-color: transparent;
     font-family: var(--ff-secondary);
     padding-left: 1em;
     padding-right: 1em;
@@ -615,7 +615,7 @@ footer {
     border-radius: 17px;
     border: none;
     height: 2em;
-    width: 20em;
+    width: 25em;
     padding: 0.5em 1em;
     outline-style: none;
   }
