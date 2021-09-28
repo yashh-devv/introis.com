@@ -15,22 +15,22 @@ navlinks.forEach(link => {
 //SCROLL
 
 const vh = document.documentElement.clientHeight ;
-var height=0;
-var body = document.body,
-    html = document.documentElement;
-var max = Math.max( body.scrollHeight, body.offsetHeight, 
-                       html.clientHeight, html.scrollHeight, html.offsetHeight );
+// var height=0;
+// var body = document.body,
+//     html = document.documentElement;
+// var max = Math.max( body.scrollHeight, body.offsetHeight, 
+//                        html.clientHeight, html.scrollHeight, html.offsetHeight );
 
-$(document).on('mousewheel DOMMouseScroll', function (event) {
-    if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
-       console.log('scrolling up')
-           prev();
-    } else {
-        console.log('scrolling down')
+// $(document).on('mousewheel DOMMouseScroll', function (event) {
+//     if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+//        console.log('scrolling up')
+//            prev();
+//     } else {
+//         console.log('scrolling down')
      
-        next();
-    }
-});
+//         next();
+//     }
+// });
 
 
 
@@ -55,6 +55,14 @@ function sleep(milliseconds) {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
 }
+
+
+
+
+
+
+//HOVER
+
 
 $("#service1").hover(function(){
   $("#service-h1").toggleClass("gradient-text1");
@@ -102,3 +110,26 @@ var message = "Come Back Soon!";
     }
     document.title = message;
   });
+
+
+//NAV INDICATOR
+
+const sections=document.querySelectorAll('.page');
+const tabs=document.querySelectorAll('.tab');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(section =>{
+    const sectionTop=section.offsetTop;
+    const sectionheight=section.clientHeight;
+    if(pageYOffset>=sectionTop){
+      current=section.getAttribute('id');
+    }
+  })
+  console.log(current);
+  tabs.forEach(tab=>{
+    tab.querySelector('a').classList.remove('active-tab');
+    if(tab.classList.contains(current)){
+      tab.querySelector('a').classList.add('active-tab');
+    }
+  })
+})

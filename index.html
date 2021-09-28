@@ -33,17 +33,19 @@
     <title>Introis Technologies</title>
   </head>
   <body>
-   <div class="shade2"></div>
+    <img class="background" src="./images/Background.svg" alt="" />
     <header>
       <div class="logo">
         <img class="logo-img" src="./images/logo.svg" />
       </div>
       <ul>
-        <li class="tab"><a href="#home">Home</a></li>
-        <li class="tab"><a href="#about-us">About Us</a></li>
-        <li class="tab"><a href="#our-services">Our Services</a></li>
-        <li class="tab"><a href="#works">Latest Works</a></li>
-        <li class="tab"><a href="#join-us">Join Us</a></li>
+        <li class="tab home"><a href="#home">Home</a></li>
+        <li class="tab about-us"><a href="#about-us">About Us</a></li>
+        <li class="tab our-services">
+          <a href="#our-services">Our Services</a>
+        </li>
+        <li class="tab works"><a href="#works">Latest Works</a></li>
+        <li class="tab join-us"><a href="#join-us">Join Us</a></li>
       </ul>
       <a href="#contact-us" class="contact-us">Contact Us</a>
       <div class="nav-toggle">
@@ -53,7 +55,7 @@
 
     <nav class="nav">
       <ul class="nav_list">
-        <li class="nav_item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav_item"><a class="nav-link" href="#">Home</a></li>
         <li class="nav_item">
           <a class="nav-link" href="#about-us">About US</a>
         </li>
@@ -69,8 +71,8 @@
       </ul>
     </nav>
 
-    <div class="container" id="home">
-      <div class="page">
+    <div class="container">
+      <div class="page" id="home">
         <section class="page1">
           <article>
             <h1 class="page1-h1">Infinite Possibilities One Stop Solution</h1>
@@ -252,12 +254,28 @@
             >
               <div class="flex-sheet">
                 <div class="details">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" id="name" />
-                  <label for="mail">Mail</label>
-                  <input type="email" name="mail" id="mail" />
-                  <label for="phone">Phone</label>
-                  <input type="tel" name="phone" id="phone" />
+                  <div class="inputs">
+                    <label for="name">Your Name</label>
+                    <div class="theInput">
+                      <!-- <img src="./images/name.svg" alt="" /> -->
+                      <input type="text" name="name" id="name" />
+                    </div>
+                  </div>
+                  <div class="inputs">
+                    <label for="mail">Mail</label>
+                    <div class="theInput">
+                      <!-- <img src="./images/mail.svg" alt="" /> -->
+                      <input type="email" name="mail" id="mail" />
+                    </div>
+                  </div>
+                  <div class="inputs">
+                    <label for="phone">Phone</label>
+                    <div class="theInput">
+                      <!-- <img src="./images/phone.svg" alt="" /> -->
+                      <input type="tel" name="phone" id="phone" />
+                    </div>
+                  </div>
+
                   <input
                     type="hidden"
                     name="_subject"
@@ -265,7 +283,7 @@
                   />
                   <input type="hidden" name="_captcha" value="false" />
                 </div>
-                <div>
+                <div class="message">
                   <label for="message">Message</label>
                   <textarea
                     name="message"
