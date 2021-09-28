@@ -136,3 +136,18 @@ window.addEventListener('scroll',()=>{
     }
   })
 })
+
+
+
+//MOUSE
+"use strict";
+(function(){
+var cursor=document.querySelector('.cursor');
+var editCursor= function  editCursor (e){
+cursor.style.left=e.pageX='px';
+cursor.style.top = e.pageY='px';
+};
+  window.addEventListener('mousemove',editCursor);
+})();
+
+

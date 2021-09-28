@@ -243,6 +243,8 @@ header a {
 .service {
   /* z-index: 1000; */
   max-width: 80%;
+  font-family: var(--ff-secondary);
+  color: #2c2c2c;
   margin: 1.2em;
   padding: 1em 3em;
   border-radius: 10px;
@@ -250,9 +252,10 @@ header a {
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 
   transition: transform 250ms;
-  font-size: 2em;
+  font-size: 17.94px;
 }
 .service p {
+  font-size: 11.96px;
   font-weight: 300;
 }
 
@@ -364,7 +367,7 @@ footer {
   }
 }
 
-@media (min-width: 800px) {
+@media (max-width: 1366px) {
   body {
     text-align: unset;
     height: 100vh;
@@ -382,7 +385,7 @@ footer {
   }
 
   header li {
-    font-size: 1em;
+    font-size: 17.08px;
     font-weight: var(--fw-reg);
 
     float: left;
@@ -454,11 +457,12 @@ footer {
   }
   .page1 h1 {
     margin: 0;
-    font-size: 4em;
+    font-size: 70.42px;
     font-weight: 900;
   }
 
   .page1 p {
+    font-size: 21.67px;
     max-width: 60%;
   }
   .page1 img {
@@ -475,7 +479,8 @@ footer {
     flex: 50;
     padding: 1em;
     color: var(--clr-primary);
-    font-size: var(--fs-h2);
+    font-weight: 700;
+    font-size: 48.11px;
     text-transform: uppercase;
   }
   .page2-h2 span,
@@ -488,8 +493,8 @@ footer {
   }
   .page2-p {
     flex: 50;
-    font-size: 1em;
-    font-weight: 300;
+    font-size: 18.04px;
+    font-weight: 400;
   }
   .page3 {
     display: flex;
@@ -703,3 +708,15 @@ footer {
   background-color: #006dc6;
   background-image: linear-gradient(45deg, #006dc6, #86c64d);
 }
+
+/* .cursor {
+  position: fixed;
+  width: 20px;
+  z-index: ;
+  height: 20px;
+  border-radius: 50%;
+  background: blue;
+  transition: 0.1s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+} */
