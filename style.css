@@ -367,7 +367,7 @@ footer {
   }
 }
 
-@media (max-width: 1366px) {
+@media (min-width: 1000px) {
   body {
     text-align: unset;
     height: 100vh;
@@ -666,13 +666,12 @@ footer {
     background: #3aa9d7;
     filter: blur(500px);
   }
-  .background {
-    position: fixed;
-    z-index: 0;
-    order: -1;
-  }
 }
-
+.background {
+  position: fixed;
+  z-index: 0;
+  order: -1;
+}
 [class^="gradient-text"] {
   background-size: 100%;
   -webkit-background-clip: text;
