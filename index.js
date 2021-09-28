@@ -88,7 +88,7 @@ $("#service6").hover(function(){
 // Comeback
 
 
-var message = "Come Back";
+var message = "Come Back Soon!";
   var original;
 
   $(window).focus(function() {
