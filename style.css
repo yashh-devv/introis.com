@@ -256,11 +256,13 @@ header a {
   padding: 1em 3em;
   border-radius: 10px;
   background: #f0f0f3;
-  box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+  box-shadow: 10px 10px 20px  #9EA8BD, -10px -10px 35px #ffffff;
 
   transition: transform 250ms;
   font-size: 17.94px;
 }
+
+
 .service p {
   font-size: 11.96px;
   font-weight: 300;
