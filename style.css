@@ -165,7 +165,9 @@ header a {
 .logo-img {
   max-width: 8em;
 }
-
+.logo:hover{
+  cursor: pointer;
+}
 .container {
   margin-top: 8em;
   padding: 0 1em;
@@ -410,6 +412,10 @@ footer {
   display: none;
 }
 
+.count
+{
+  display: none;
+}
 @media (min-width: 760px) {
   .container {
     z-index: 1000;
@@ -617,12 +623,12 @@ footer {
     height: fit-content;
   }
   .work-page {
-    padding: 0 4em;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--ff-sofia);
-
+    width: 80%;
   }
   .work-page img {
     width:320px ;
@@ -658,6 +664,14 @@ footer {
     height: 12em;
     width: 13em;
   }
+  /* .count{
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 2em;
+    color: black;
+  } */
   .work-in-progress{
 align-items: center;
 justify-content: center;  }

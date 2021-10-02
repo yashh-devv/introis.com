@@ -204,3 +204,8 @@ cursor.style.top = e.pageY='px';
 })();
 
 
+//Logo click
+
+document.getElementById('logo').addEventListener('click',()=>{
+  location.href="http://introis.com";
+});
