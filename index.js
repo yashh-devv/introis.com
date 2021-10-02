@@ -124,9 +124,9 @@ window.addEventListener('scroll',()=>{
     if(pageYOffset>=sectionTop){
       current=section.getAttribute('id');
     }
-    if(pageYOffset==0){
-       current="home";
-    }
+    // if(pageYOffset==0){
+    //    current="home";
+    // }
   })
   console.log(current);
   tabs.forEach(tab=>{
