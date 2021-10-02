@@ -192,7 +192,13 @@ header a {
   margin: 0;
   font-family: var(--ff-primary);
 }
-
+.page1{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+  width: 90%;
+}
 .page1-h1 span {
   display: block;
   color: transparent;
@@ -531,6 +537,10 @@ footer {
     height: 30%;
     top: -100px;
     border-right: 2px solid var(--clr-primary);
+  } */
+  /* #type-animation{
+    border-right: solid white 4px;
+  height: 35px;
   } */
   .page1 p {
     font-size: 21.67px;
