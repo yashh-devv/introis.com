@@ -85,9 +85,7 @@ header {
   padding-left: 1em;
   padding-right: 1em;
 }
-/* header a img {
-  width: 2em;
-} */
+
 header ul {
   display: none;
 }
@@ -161,9 +159,8 @@ header a {
 
 /* LOGO */
 
-.logo a{
-  padding:0 ;
-  margin: 0;
+.logo {
+  padding:1em ;
 }
 .logo-img {
   max-width: 8em;
@@ -192,13 +189,7 @@ header a {
   margin: 0;
   font-family: var(--ff-primary);
 }
-.page1{
-  display: flex;
-  padding: 0;
-  margin: 0;
-  justify-content: space-between;
-  width: 90%;
-}
+
 .page1-h1 span {
   display: block;
   color: transparent;
@@ -519,6 +510,13 @@ footer {
     display: flex;
     padding: 1em;
     align-items: center;
+  }
+  .page1{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 90%;
   }
   .page1 h1 {
     position: relative;
