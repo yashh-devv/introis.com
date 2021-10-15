@@ -120,9 +120,12 @@ window.addEventListener('scroll',()=>{
   let current='';
   sections.forEach(section =>{
     const sectionTop=section.offsetTop;
-    const sectionheight=section.clientHeight;
-    if(pageYOffset>=sectionTop){
-      current=section.getAttribute('id');
+    const sectionHeight=section.clientHeight;
+    // if(pageYOffset>=sectionTop){
+    //   current=section.getAttribute('id');
+    // }
+    if (pageYOffset >= sectionTop - sectionHeight / 8) {
+      current = section.getAttribute("id");
     }
     // if(pageYOffset==0){
     //    current="home";
@@ -133,6 +136,9 @@ window.addEventListener('scroll',()=>{
     tab.querySelector('a').classList.remove('active-tab');
     if(tab.classList.contains(current)){
       tab.querySelector('a').classList.add('active-tab');
+    }
+    if(current==null){
+      tab.querySelector('#works').classList.add('active-tab');
     }
   })
 })
@@ -184,7 +190,7 @@ function loop () {
   }
   const spedUp = Math.random() * (80 -50) + 50
   const normalSpeed = Math.random() * (300 -200) + 200
-  const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed
+  const time = isEnd ? 100 : isDeleting ? spedUp : normalSpeed
   setTimeout(loop, time)
 }
 
